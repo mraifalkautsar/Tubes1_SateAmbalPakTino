@@ -1,0 +1,15 @@
+{
+  "name": "Psatir",
+  "version": "1.0",
+  "authors": [
+    "Psatir"
+  ],
+  "description": "Gw satirin lu",
+  "homepage": "",
+  "countryCodes": [
+    "us",
+    "dk"
+  ],
+  "platform": ".Net 8.0",
+  "programmingLang": "C# 10.0"
+}
