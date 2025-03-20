@@ -7,19 +7,19 @@ using Microsoft.Extensions.Configuration.Json;
 using System.Runtime.CompilerServices;
 
 // ------------------------------------------------------------------
-// Psatir
+// Ptarunk
 // ------------------------------------------------------------------
 // The bot will ram you to death if it sees you weak
 // ------------------------------------------------------------------
-public class Psatir : Bot
+public class Ptarunk : Bot
 {
 
     static void Main(string[] args)
     {
-        new Psatir().Start();
+        new Ptarunk().Start();
     }
 
-    Psatir() : base(BotInfo.FromFile("Psatir.json")) { }
+    Ptarunk() : base(BotInfo.FromFile("Ptarunk.json")) { }
     bool hittingWall;
     double centerX;
     double centerY;
@@ -31,6 +31,7 @@ public class Psatir : Bot
         RadarColor = Color.Black;
         ScanColor = Color.Yellow;
         hittingWall = false;
+        foundTarget = false;
         centerX = ArenaWidth / 2.0;
         centerY = ArenaHeight / 2.0;
         
@@ -39,6 +40,7 @@ public class Psatir : Bot
             if (!hittingWall) {
                 SetTurnLeft(10);
                 SetForward(10);
+                MaxSpeed = 3;
                 Go();
             }
             else {

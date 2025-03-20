@@ -1,0 +1,15 @@
+{
+  "name": "Ptarunk",
+  "version": "1.0",
+  "authors": [
+    "Ptarunk"
+  ],
+  "description": "Sat set sat set, duar",
+  "homepage": "",
+  "countryCodes": [
+    "us",
+    "dk"
+  ],
+  "platform": ".Net 8.0",
+  "programmingLang": "C# 10.0"
+}
