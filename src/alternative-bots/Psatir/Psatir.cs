@@ -4,6 +4,7 @@ using System.Drawing;
 using System;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.Json;
+using System.Runtime.CompilerServices;
 
 // ------------------------------------------------------------------
 // Psatir
@@ -12,56 +13,65 @@ using Microsoft.Extensions.Configuration.Json;
 // ------------------------------------------------------------------
 public class Psatir : Bot
 {
-    double centerX;
-    double centerY;
-    
-    // The main method starts our bot
+
     static void Main(string[] args)
     {
         new Psatir().Start();
     }
 
-    // Constructor taking a BotInfo that is forwarded to the base class
     Psatir() : base(BotInfo.FromFile("Psatir.json")) { }
+    bool hittingWall;
+    double centerX;
+    double centerY;
 
-    // Called when a new round is started -> initialize and do some movement
     public override void Run()
     {
         BodyColor = Color.Blue;
         TurretColor = Color.Blue;
         RadarColor = Color.Black;
         ScanColor = Color.Yellow;
-
-		centerX = ArenaWidth / 2.0;
-		centerY = ArenaHeight / 2.0;
-		double wallMargin = 50;
-        // Repeat while the bot is running
+        hittingWall = false;
+        centerX = ArenaWidth / 2.0;
+        centerY = ArenaHeight / 2.0;
+        
         while (IsRunning)
         {
-            // Tell the game that when we take move, we'll also want to turn right... a lot
-            SetTurnLeft(10_000);
-			
-            // Limit our speed to 5
-            MaxSpeed = 200;
-            // Start moving (and turning)
-            Forward(10_000);
+            if (!hittingWall) {
+                SetTurnLeft(10_000);
+                SetForward(10_000);
+                Go();
+            }
+            else {
+                HandleHittingWall();
+            }
         }
     }
 
-    // We scanned another bot -> fire hard!
     public override void OnScannedBot(ScannedBotEvent e)
     {
         var distance = DistanceTo(e.X, e.Y);
-        double firepower = distance < 100 ? 3 : distance < 300 ? 2 : 1;
+        double firepower;
+        if (distance < 100) {
+            firepower = 3;
+        } else if (distance > 300) {
+            firepower = 0.5;
+        } else {
+            firepower = 3 - (((distance - 100)/200) * 2.5);
+        }
+
+        firepower = distance < 100 ? 3 : distance < 300 ? 2 : 1;
+        
         if (e.Energy < 10)
         {
             TurnToFaceTarget(e.X, e.Y);
-            Forward(distance + 5);
-            Rescan(); // Might want to move forward again!    
+            SetForward(distance + 5);
+            SetRescan(); 
         }
+
 		if (Energy > 10) {
-        	Fire(firepower);
+        	SetFire(firepower);
 		}
+        Go();
     }
 
     private double NormalizeBearing(double angle) {
@@ -73,34 +83,45 @@ public class Psatir : Bot
     public override void OnHitBot(HitBotEvent e)
     {
         TurnToFaceTarget(e.X, e.Y);
-
-        // Determine a shot that won't kill the bot...
-        // We want to ram it instead for bonus points
         if (e.Energy > 16)
-            Fire(3);
+            SetFire(3);
         else if (e.Energy > 10)
-            Fire(2);
+            SetFire(2);
         else if (e.Energy > 4)
-            Fire(1);
+            SetFire(1);
         else if (e.Energy > 2)
-            Fire(.5);
+            SetFire(.5);
         else if (e.Energy > .4)
-            Fire(.1);
+            SetFire(.1);
 
-        Forward(40); // Ram it again!
+        SetForward(40);
+        Go();
     }
 
-    // Method that turns the bot to face the target at coordinate x,y, but also sets the
-    // default turn direction used if no bot is being scanned within in the Run() method.
     private void TurnToFaceTarget(double x, double y)
     {
         var bearing = BearingTo(x, y);
 
-        TurnLeft(bearing);
+        SetTurnLeft(bearing);
+        Go();
+    }
+
+    private void HandleHittingWall() {
+        double distance = DistanceTo(centerX, centerY);
+        if (distance > 100) { 
+            double bearing = BearingTo(centerX, centerY);
+            SetTurnLeft(bearing);
+            SetForward(10_000);
+        }
+        else {
+            hittingWall = false;
+        }
+        Go();
     }
 
     public override void OnHitWall(HitWallEvent e)
     {	
-        
+        hittingWall = true;
+        Go();
     }
 }
