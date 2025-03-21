@@ -1,0 +1,10 @@
+{
+  "name": "Pecundunk",
+  "version": "1.0",
+  "authors": ["Orvin Andika"],
+  "description": "A bot that avoid fighting",
+  "homepage": "",
+  "countryCodes": ["id"],
+  "platform": ".Net 9.0",
+  "programmingLang": "C# 10.0"
+}

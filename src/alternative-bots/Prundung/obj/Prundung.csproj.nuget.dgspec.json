@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Kuliah\\Tubes\\Strategi Algoritma\\Tubes 1\\sample-bots-csharp-0.30.0\\Prundung\\Prundung.csproj": {}
+    "C:\\Users\\Orvin Andika\\Documents\\Stima\\Tubes1_SateAmbalPakTino\\src\\alternative-bots\\Prundung\\Prundung.csproj": {}
   },
   "projects": {
-    "D:\\Kuliah\\Tubes\\Strategi Algoritma\\Tubes 1\\sample-bots-csharp-0.30.0\\Prundung\\Prundung.csproj": {
+    "C:\\Users\\Orvin Andika\\Documents\\Stima\\Tubes1_SateAmbalPakTino\\src\\alternative-bots\\Prundung\\Prundung.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Kuliah\\Tubes\\Strategi Algoritma\\Tubes 1\\sample-bots-csharp-0.30.0\\Prundung\\Prundung.csproj",
+        "projectUniqueName": "C:\\Users\\Orvin Andika\\Documents\\Stima\\Tubes1_SateAmbalPakTino\\src\\alternative-bots\\Prundung\\Prundung.csproj",
         "projectName": "Prundung",
-        "projectPath": "D:\\Kuliah\\Tubes\\Strategi Algoritma\\Tubes 1\\sample-bots-csharp-0.30.0\\Prundung\\Prundung.csproj",
-        "packagesPath": "C:\\Users\\m s i\\.nuget\\packages\\",
-        "outputPath": "D:\\Kuliah\\Tubes\\Strategi Algoritma\\Tubes 1\\sample-bots-csharp-0.30.0\\Prundung\\obj\\",
+        "projectPath": "C:\\Users\\Orvin Andika\\Documents\\Stima\\Tubes1_SateAmbalPakTino\\src\\alternative-bots\\Prundung\\Prundung.csproj",
+        "packagesPath": "C:\\Users\\Orvin Andika\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Orvin Andika\\Documents\\Stima\\Tubes1_SateAmbalPakTino\\src\\alternative-bots\\Prundung\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\m s i\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Orvin Andika\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
