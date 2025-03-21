@@ -37,8 +37,8 @@ public class Psatir : Bot
         while (IsRunning)
         {
             if (!hittingWall) {
-                SetTurnLeft(10);
-                SetForward(10);
+                SetTurnLeft(1000);
+                SetForward(1000);
                 Go();
             }
             else {
@@ -59,8 +59,6 @@ public class Psatir : Bot
             firepower = 3 - (((distance - 100)/200) * 2.5);
         }
 
-        firepower = distance < 100 ? 3 : distance < 300 ? 2 : 1;
-        
         if (e.Energy < 10)
         {
             TurnToFaceTarget(e.X, e.Y);
