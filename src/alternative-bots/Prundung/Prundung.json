@@ -2,14 +2,12 @@
   "name": "Prundung",
   "version": "1.0",
   "authors": [
-    "Mathew Nelson",
-    "Flemming N. Larsen"
+    "Reza Ahmad S"
   ],
-  "description": "Sits still. Tracks and fires at the nearest bot it sees.",
+  "description": "Kaborrr or Mampus Gua Lock",
   "homepage": "",
   "countryCodes": [
-    "us",
-    "dk"
+    "id"
   ],
   "platform": ".Net 6.0",
   "programmingLang": "C# 10.0"
