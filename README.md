@@ -1,6 +1,8 @@
 # Sate Ambal Pak Tino
+![image](https://github.com/user-attachments/assets/db6c4135-a428-44b3-a1bb-1ee6d9f8695a)
+
 <div align="justify">
-Selamat datang di repository Sate Ambal Pak Tino. Repository ini berisi bot-bot hasil rekayasa para insyinyur bawahan Pak Tino yang dapat digunakan untuk bertarung di Robocode Tank Royale. Bot yang dibuat mengimplementasikan Algoritma Greedy dengan berbagai heuristik yang berbeda-beda untuk berusaha meraih poin tertinggi dalam baku hantam ini. Selamat mencoba!!!
+Selamat datang di repository Sate Ambal Pak Tino. Repository ini berisi bot-bot hasil rekayasa para insinyur bawahan Pak Tino yang dapat digunakan untuk bertarung di Robocode Tank Royale. Bot yang dibuat mengimplementasikan Algoritma Greedy dengan berbagai heuristik yang berbeda-beda untuk berusaha meraih poin tertinggi dalam baku hantam ini. Selamat mencoba!!!
 </div>
 
 ## Description
