@@ -63,7 +63,7 @@ public class Psatir : Bot
         }
 
         // Jika musuh memiliki energi rendah, kejar dan ram!
-        if (e.Energy <= 24)
+        if (e.Energy <= 20)
         {
             TurnToFaceTarget(e.X, e.Y);
             SetForward(distance + 5);
@@ -71,7 +71,7 @@ public class Psatir : Bot
         }
 
         // Jika musuh masih memiliki energi tinggi, tembak.
-		if (Energy > 24) { 
+		if (Energy > 20) { 
         	SetFire(firepower);
 		}
         Go();
