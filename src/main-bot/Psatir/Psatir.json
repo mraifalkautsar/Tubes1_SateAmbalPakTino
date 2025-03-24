@@ -1,8 +1,8 @@
 {
-  "name": "Pecundunk",
+  "name": "Psatir",
   "version": "1.0",
   "authors": ["Orvin Andika I. A.", "Muhammad Raif A.", "Reza Ahmad S."],
-  "description": "Bot ini menghindari pertarungan dan tidak menyerang secara aktif",
+  "description": "Bot ini berputar-putar dan menge-ram tank lawan yang berenergi rendah",
   "homepage": "https://github.com/mraifalkautsar/Tubes1_SateAmbalPakTino",
   "countryCodes": ["id"],
   "platform": ".Net 9.0",

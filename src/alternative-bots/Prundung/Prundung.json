@@ -1,14 +1,10 @@
 {
   "name": "Prundung",
   "version": "1.0",
-  "authors": [
-    "Reza Ahmad S"
-  ],
-  "description": "Kaborrr or Mampus Gua Lock",
-  "homepage": "",
-  "countryCodes": [
-    "id"
-  ],
+  "authors": ["Orvin Andika I. A.", "Muhammad Raif A.", "Reza Ahmad S."],
+  "description": "Bot ini bergerak ke pojok arena dan mengelock target",
+  "homepage": "https://github.com/mraifalkautsar/Tubes1_SateAmbalPakTino",
+  "countryCodes": ["id"],
   "platform": ".Net 6.0",
   "programmingLang": "C# 10.0"
 }
