@@ -32,7 +32,7 @@ Pada repository ini terdapat empat bot yang menerapkan algoritma greedy dengan h
 ### ⚙️ Requirements
 
 - [.NET SDK](https://dotnet.microsoft.com/) (.NET 6.0 or later)
-- [Robocode Tank Royale CLI](https://robocode-tank-royale.io/cli/)
+- Robocode Tank Royale GUI
 - Editor: Visual Studio / VS Code / Rider
 
 ### 🚀 Installing
@@ -44,7 +44,9 @@ Pada repository ini terdapat empat bot yang menerapkan algoritma greedy dengan h
    ```bash
    cd namaBot
    dotnet build
-4. **Jalankan dengan Robocode Tank Royale**
+4. **Unduh file jar Robocode Tank Royale**<br>
+   https://github.com/Ariel-HS/tubes1-if2211-starter-pack/releases/tag/v1.0
+4. **Jalankan Robocode Tank Royale**
    ```bash
    java -jar robocode-tankroyale-gui-0.30.0.jar
 
