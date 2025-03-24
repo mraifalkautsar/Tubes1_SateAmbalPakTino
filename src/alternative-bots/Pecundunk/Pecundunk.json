@@ -1,9 +1,9 @@
 {
   "name": "Pecundunk",
   "version": "1.0",
-  "authors": ["Orvin Andika"],
-  "description": "A bot that avoid fighting",
-  "homepage": "",
+  "authors": ["Orvin Andika I. A.", "Muhammad Raif A.", "Reza Ahmad S."],
+  "description": "Bot ini menghindari pertarungan dan tidak menyerang secara aktif",
+  "homepage": "https://github.com/mraifalkautsar/Tubes1_SateAmbalPakTino",
   "countryCodes": ["id"],
   "platform": ".Net 9.0",
   "programmingLang": "C# 10.0"

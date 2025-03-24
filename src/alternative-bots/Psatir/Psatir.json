@@ -1,15 +1,10 @@
 {
   "name": "Psatir",
   "version": "1.0",
-  "authors": [
-    "Psatir"
-  ],
-  "description": "Gw satirin lu",
-  "homepage": "",
-  "countryCodes": [
-    "us",
-    "dk"
-  ],
-  "platform": ".Net 8.0",
+  "authors": ["Orvin Andika I. A.", "Muhammad Raif A.", "Reza Ahmad S."],
+  "description": "Bot ini berputar-putar dan menge-ram tank lawan yang berenergi rendah",
+  "homepage": "https://github.com/mraifalkautsar/Tubes1_SateAmbalPakTino",
+  "countryCodes": ["id"],
+  "platform": ".Net 9.0",
   "programmingLang": "C# 10.0"
 }

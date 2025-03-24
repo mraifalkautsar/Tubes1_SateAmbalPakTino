@@ -1,9 +1,9 @@
 {
   "name": "Psilat",
   "version": "1.0",
-  "authors": ["Orvin Andika"],
-  "description": "Tembak tembak dor dor dor dor",
-  "homepage": "",
+  "authors": ["Orvin Andika I. A.", "Muhammad Raif A.", "Reza Ahmad S."],
+  "description": "Tank ini menyerang lawan yang berjarak dekat",
+  "homepage": "https://github.com/mraifalkautsar/Tubes1_SateAmbalPakTino",
   "countryCodes": ["id"],
   "platform": ".Net 9.0",
   "programmingLang": "C# 10.0"
